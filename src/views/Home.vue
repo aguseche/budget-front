@@ -27,9 +27,10 @@
               </div>
             </v-card-subtitle>
             <v-card-text>
-              <p v-if="file">
+              <!-- Show files name (does not work) -->
+              <!-- <p v-if="file">
                 {{ file.name }}
-              </p>
+              </p> -->
             </v-card-text>
             <v-btn v-on:click="submitFile()" class="py-3">Submit</v-btn>
           </v-card>
