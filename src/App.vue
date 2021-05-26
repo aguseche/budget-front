@@ -3,16 +3,22 @@
     <v-main>
       <router-view />
     </v-main>
+    <Footer />
   </v-app>
 </template>
 
 <script>
+import Footer from "./components/Footer";
+
 export default {
   name: "App",
 
   data: () => ({
     //
   }),
+  components: {
+    Footer,
+  },
 };
 </script>
 <style>
@@ -23,5 +29,9 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: white;
+}
+h1,
+h2 {
+  font-weight: normal;
 }
 </style>
