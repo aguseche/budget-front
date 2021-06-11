@@ -30,6 +30,9 @@ export default {
   text-align: center;
   color: white;
 }
+html {
+  scroll-behavior: smooth;
+}
 h1,
 h2 {
   font-weight: normal;

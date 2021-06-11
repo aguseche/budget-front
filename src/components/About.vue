@@ -1,32 +1,24 @@
 <template>
   <v-container fluid class="information-section">
-    <v-row id="text">
+    <v-row id="user-guide">
       <v-col align="start"
         ><header>
-          <h1 class="py-5 my-5 pl-15 ml-15">{{ heading }}</h1>
+          <h1 class="py-4 my-4 pl-15 ml-15">{{ heading }}</h1>
         </header></v-col
       >
     </v-row>
     <v-container v-for="item in instructions" :key="item.number">
-      <v-row>
+      <v-row class="">
         <v-col align="center">
           <p class="round-item">{{ item.number }}</p>
         </v-col>
         <v-col align="center">
           <p>{{ item.text }}</p>
           <v-row v-if="item.number === 2">
-            <v-col
-              >Price Type Description(Optional) <br />
+            <v-col>
+              Price Type Description(Optional) <br />
               For example: 1000 food supermarket <br />
               or 2000 house april rent
-              <br />
-              <br />
-              Take in consideration that its not Case Sensitive, <br />
-              that means that House or house would be combined into house.
-              <br />
-              But if you use different types like supermarket or groceries
-              <br />
-              thouse wont be combined
             </v-col>
           </v-row>
         </v-col>
